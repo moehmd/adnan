@@ -1,0 +1,39 @@
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.columns {
+    columns: 4;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        columns: 3;
+    }
+}
+
+.mb-0>a {
+    display: block;
+    position: relative;
+}
+
+.mb-0>a:after {
+    content: "\f078";
+    /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+}
+
+.mb-0>a[aria-expanded="true"]:after {
+    content: "\f077";
+    /* fa-chevron-up */
+}
+
+.accordion-mod {
+    padding: 2em;
+}

@@ -1,0 +1,47 @@
+<section id="contact" class="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="contact-wrapper form-style-two pt-3rem">
+                    <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Hinterlasse <span>eine nachricht.</span></h4>
+                    <form id="contactfrm" [formGroup]="contactUs" (ngSubmit)="sendMail()">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Name</label>
+                                    <div class="input-items default">
+                                        <input type="text" class="form-control" name="name" id="name" formControlName="name" placeholder="Name eingeben" title="Bitte geben Sie Ihren Namen ein (mindestens 2 Zeichen)" required>
+                                        <i class="lni lni-user"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-input mt-25">
+                                    <label>Email</label>
+                                    <div class="input-items default">
+                                        <input type="email" class="form-control" name="email" id="email" formControlName="email" placeholder="Email eingeben" title="Bitte geben Sie eine gültige E-Mail-Adresse ein" required>
+                                        <i class="lni lni-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-input mt-25">
+                                    <label>nachricht</label>
+                                    <div class="input-items default"> <textarea name="comments" class="form-control" id="comments" formControlName="comments" cols="3" rows="5" placeholder="Gib deine Nachricht ein…" title="Bitte geben Sie Ihre Nachricht ein (mindestens 10 Zeichen)" required></textarea>
+                                        <i class="lni lni-pencil-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="form-message"></p>
+                            <div class="col-md-12">
+                                <div class="form-input light-rounded-buttons mt-30">
+                                    <button name="submit" class="btn btn-info btn-block curtainup" id="submit" (click)="sendMail()" [disabled]="!contactUs.valid">E-Mail senden</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

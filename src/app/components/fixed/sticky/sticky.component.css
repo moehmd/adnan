@@ -1,0 +1,53 @@
+.sticky-social {
+    position: fixed;
+    top: 180px;
+    opacity: 0.85;
+    z-index: 1100;
+    /* left: -40px;
+    padding: 0px;
+    margin: 0px; */
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    padding: 10px 10px;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social li:hover {
+    margin-right: -40px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+.social li:hover .fa {
+    margin-left: 20px;
+}
+
+.fa {
+    color: #fff;
+    transition: all 0.8s ease-in-out;
+}
+
+.fb {
+    background-color: #3C5A98;
+}
+
+.twitter {
+    background-color: #1EA1F2;
+}
+
+.insta {
+    background-color: #686868;
+}
+
+.map {
+    background-color: #fd4e22;
+}
+
+.phone {
+    background-color: #00ff37;
+}

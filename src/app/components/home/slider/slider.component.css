@@ -1,0 +1,17 @@
+.carousel-item {
+    position: relative;
+    background-position: center;
+    background-size: cover
+}
+
+.carousel-main {
+    text-align: center;
+}
+
+.overlay-image {
+    box-shadow: 7px 10px 23px -1px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 7px 10px 23px -1px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 7px 10px 23px -1px rgba(0, 0, 0, 0.46);
+    width: 100%;
+    height: auto
+}

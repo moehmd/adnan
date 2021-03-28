@@ -1,0 +1,20 @@
+body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+.links {
+    background-color: #efefef;
+    font-weight: bold;
+}
+
+.links>a {
+    color: rgb(150, 148, 148);
+    padding: .75em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links>a:hover {
+    color: rgb(225, 65, 65);
+}
