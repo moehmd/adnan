@@ -287,3 +287,7 @@ li>a:only-child:after {
 .socials {
     float: right;
 }
+
+.news-moded {
+    color: rgb(225, 65, 65) !important
+}

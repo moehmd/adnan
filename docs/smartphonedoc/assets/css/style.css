@@ -4282,6 +4282,12 @@ p.form-message.error.form-message.error {
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 450px) {
+    .contact-info-icon {
+        padding-left: 20px;
+    }
+}
+
 .contact-info .single-contact-info .contact-info-content {
     padding-left: 20px;
 }
@@ -4300,6 +4306,15 @@ p.form-message.error.form-message.error {
 
 .contact-info .single-contact-info.contact-color-3 .contact-info-icon i {
     background-color: #00ff37;
+}
+
+.contact-info .single-contact-info.contact-color-schedule .contact-info-icon i {
+    background-color: lightblue;
+}
+
+.contact-info .single-contact-info.contact-color-REPARATURINFO .contact-info-icon i {
+    /* background-color: rgb(225, 65, 65); */
+    background-color: yellow;
 }
 
 .contact-wrapper .contact-title {

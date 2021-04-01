@@ -13,7 +13,7 @@ body {
 .block {
     margin: 0 auto;
     max-width: 900px;
-    padding: 50px 30px;
+    padding-top: 50px;
 }
 
 .input-res {
@@ -34,4 +34,51 @@ body {
     outline: none;
     margin: 0;
     box-sizing: border-box;
+}
+
+@media only screen and (max-width: 450px) {
+    .whoweare {
+        margin: 1em;
+    }
+}
+
+.whowearetext {
+    font-size: 1.25em;
+    font-style: karla;
+}
+
+.homeh1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+/* @media only screen and (max-width: 450px) {
+    .homeh1 {
+        font-size: 1em;
+    }
+} */
+
+.blog-author h3::before,
+.blog-author--no-cover h3::before {
+    background: url("../../../../assets/img/favicon.png");
+    background-size: cover;
+    border-radius: 50%;
+    content: " ";
+    display: inline-block;
+    height: 32px;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 8px;
+    width: 32px;
+}
+
+.blog-author h3 {
+    color: rgb(46, 45, 45);
+    font-weight: 100;
+}
+
+.blog-author--no-cover h3 {
+    color: #999;
+    font-weight: 100;
 }

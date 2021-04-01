@@ -2674,7 +2674,7 @@ fieldset:disabled a.btn {
 
 .btn-info {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: rgba(23, 162, 184, 0.4);
     border-color: #17a2b8
 }
 
