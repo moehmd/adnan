@@ -1,37 +1,44 @@
 var nodemailer = require('nodemailer');
 var express = require('express');
 var cors = require('cors');
-var bodyParser = require('body-parser');
 var smtpTransport = require('nodemailer-smtp-transport');
 
 const app = express();
 const port = 3000;
-
-app.use(cors());
 var contact_form = '';
+
 // Configuring body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(cors());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.post('/sendemail', (req, res) => {
     contact_form = req.body;
     console.log(contact_form)
     res.send('Done.')
 
-
     var transport = nodemailer.createTransport(smtpTransport({
         service: 'gmail',
         auth: {
-            user: 'Sicherheitsservice.MO@gmail.com',
-            pass: 'mo.arkan'
+            user: 'contact.smartphonedoc@gmail.com',
+            pass: 'smartphonedocpass'
         }
     }));
 
     var mailOptions = {
-        from: 'Sicherheitsservice.MO@gmail.com',
-        to: 'info@mundo.de',
+        from: 'contact.smartphonedoc@gmail.com',
+        to: 'hilfe@smartphonedoc-elmshorn.de',
         subject: 'Contact us form',
-        text: "Client's name: " + contact_form.name + "\n" + "Client's Email: " + contact_form.email + "\n" + "Client's Message: " + contact_form.comments
+        text: "Name des Kunden:  " + contact_form.name +
+            "\n" +
+            "\n" +
+            "Telefonnummer des Kunden:  " + contact_form.phone +
+            "\n" +
+            "\n" +
+            "E-Mail des Kunden:  " + contact_form.email +
+            "\n" +
+            "\n" +
+            "Kundennachricht:  " + contact_form.comments
     };
 
     transport.sendMail(mailOptions, function(error, info) {

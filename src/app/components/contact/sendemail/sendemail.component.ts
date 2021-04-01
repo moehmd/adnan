@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-sendemail',
@@ -9,25 +9,30 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class SendemailComponent implements OnInit {
   URL = 'http://localhost:3000/sendemail';
-  // name: string;
-  // email: string;
-  // comments: string;
   
   contactUs: any;
     constructor(private http:HttpClient, private fb: FormBuilder) { }
   
     ngOnInit(): void {
-     this.contactUs = this.fb.group ( {
-       name : ['', Validators.required],
-       email : ['', Validators.email],
-       comments : ['', Validators.required]
-     })
-    }
+      this.contactUs = this.fb.group ({
+        name : ['', Validators.required],
+        phone : [''],
+        email : ['', Validators.email],
+        comments : ['', Validators.required]
+      });
+    };
+
     sendMail() {
- this.http.post(this.URL,  JSON.stringify(this.contactUs.value)).subscribe(data => {
-   console.log(data);
+  this.http.post(this.URL, this.contactUs.value).subscribe(data => {
+    console.log(data);
+  });
+  alert("Email sent.");
+  this.contactUs.patchValue({
+    name : "",
+    phone : "",
+    email : "",
+    comments: ""
   })
-  alert("Email sent.")
   }
   
 }
