@@ -13,18 +13,17 @@ import { NewssectionComponent } from './components/home/news/newssection/newssec
 import { DATENSCHUTZComponent } from './components/fixed/datenschutz/datenschutz.component';
 
 const routes: Routes = [
-  {path: 'kontakt', component: ContactComponent},
-  {path: 'home' , component: HomeComponent},
-  {path: 'aboutus' , component: TeamComponent},
-  // {path: 'repartur' , component: ReparturComponent},
-  {path: 'displaybruch' , component: DISPLAYBRUCHComponent},
-  {path: 'wasserschaden' , component: WASSERSCHADENComponent},
-  {path: 'hardwareschaden', component: HardwareschadenComponent},
-  {path: 'systemfehler', component: SystemfehlerComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'repartur', redirectTo: 'displaybruch',  },
-  { path: 'news', component: NewssectionComponent},
-  { path: 'DATENSCHUTZ', component: DATENSCHUTZComponent}
+  { path: 'home' , component: HomeComponent},
+  { path: 'repartur', redirectTo: 'displaybruch' },
+  { path: 'displaybruch' , component: DISPLAYBRUCHComponent },
+  { path: 'wasserschaden' , component: WASSERSCHADENComponent },
+  { path: 'hardwareschaden', component: HardwareschadenComponent },
+  { path: 'systemfehler', component: SystemfehlerComponent },
+  { path: 'news', component: NewssectionComponent },
+  { path: 'aboutus' , component: TeamComponent },
+  { path: 'kontakt', component: ContactComponent },
+  { path: 'DATENSCHUTZ', component: DATENSCHUTZComponent }
 ];
 
 @NgModule({

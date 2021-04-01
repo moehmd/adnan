@@ -61,6 +61,7 @@ p {
 }
 
 .blog-card .card__background--main {
+    background-color: #6BB192;
     height: 100%;
     position: relative;
     transition: 300ms ease-in-out;
@@ -97,14 +98,10 @@ p {
     transform: scale(1);
 }
 
-.blog-card:hover .card__background--main {
-    transform: scale(1.2) rotate(5deg);
-}
-
-.blog-card:hover .card__background--layer {
-    opacity: 1;
-}
-
 .blog-card:hover .blog-card__info h4 {
     color: #6BB192;
+}
+
+.accordion-title {
+    width: 75%;
 }

@@ -1,11 +1,7 @@
 .sticky-social {
     position: fixed;
     top: 180px;
-    opacity: 0.85;
     z-index: 1100;
-    /* left: -40px;
-    padding: 0px;
-    margin: 0px; */
 }
 
 .social {
@@ -15,21 +11,24 @@
 .social li {
     padding: 10px 10px;
     font-size: 25px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
 }
 
 .social li:hover {
     margin-right: -40px;
     box-shadow: 2px 5px 10px grey;
+    opacity: 1;
 }
 
 .social li:hover .fa {
     margin-left: 20px;
+    opacity: 1;
 }
 
 .fa {
     color: #fff;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 .fb {
@@ -42,10 +41,6 @@
 
 .insta {
     background-color: #686868;
-}
-
-.map {
-    background-color: #fd4e22;
 }
 
 .phone {

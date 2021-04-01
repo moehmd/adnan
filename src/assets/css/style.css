@@ -4453,34 +4453,8 @@ p.form-message.error.form-message.error {
     color: #fff;
 }
 
-
-/*===== BACK TO TOP =====*/
-
-.back-to-top {
-    font-size: 20px;
-    color: #fff;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 5px;
-    background-color: #0067f4;
+.repartur-blog-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    z-index: 99;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-    display: none;
+    text-transform: uppercase;
 }
-
-.back-to-top:hover {
-    color: #fff;
-    background-color: #0067f4;
-}
-
-
-/*# sourceMappingURL=style.css.map */
