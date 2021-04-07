@@ -1,7 +1,6 @@
-/* CSS Document */
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 body {
     background: #212121;
     font-size: 22px;
@@ -131,6 +130,10 @@ nav a:hover {
     color: rgb(225, 65, 65)
 }
 
+nav a.active {
+    color: rgb(225, 65, 65)
+}
+
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
@@ -203,6 +206,9 @@ li>a:only-child:after {
     .toggle+a,
     .menu {
         display: none;
+    }
+    a.active {
+        color: rgb(224, 65, 65);
     }
     /* Stylinf the toggle lable */
     .toggle {
@@ -280,14 +286,9 @@ li>a:only-child:after {
 
 .logo {
     padding: 1rem;
-    width: 50%;
     height: auto;
 }
 
 .socials {
     float: right;
-}
-
-.news-moded {
-    color: rgb(225, 65, 65) !important
 }

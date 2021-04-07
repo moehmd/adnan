@@ -1,0 +1,9 @@
+.contact-icons {
+    column-count: 3;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-icons {
+        column-count: 2;
+    }
+}

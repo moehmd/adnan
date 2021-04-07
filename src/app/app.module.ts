@@ -16,7 +16,6 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PreloaderComponent } from './components/fixed/preloader/preloader.component';
-import { BannerLogoComponent } from './components/fixed/header/banner-logo/banner-logo.component';
 import { MapComponent } from './components/contact/map/map.component';
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { SendemailComponent } from './components/contact/sendemail/sendemail.component';
@@ -52,7 +51,6 @@ import { DATENSCHUTZComponent } from './components/fixed/datenschutz/datenschutz
     ServicesComponent,
     SliderComponent,
     PreloaderComponent,
-    BannerLogoComponent,
     MapComponent,
     ContactComponent,
     SendemailComponent,
